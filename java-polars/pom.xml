@@ -1,0 +1,64 @@
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>rs.pola</groupId>
+    <artifactId>polars</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.arrow/arrow-memory-core -->
+        <dependency>
+            <groupId>org.apache.arrow</groupId>
+            <artifactId>arrow-memory-core</artifactId>
+            <version>11.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.arrow/flight-sql -->
+        <dependency>
+            <groupId>org.apache.arrow</groupId>
+            <artifactId>flight-sql</artifactId>
+            <version>11.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.arrow/arrow-c-data -->
+        <dependency>
+            <groupId>org.apache.arrow</groupId>
+            <artifactId>arrow-c-data</artifactId>
+            <version>11.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.arrow/flight-integration-tests -->
+        <dependency>
+            <groupId>org.apache.arrow</groupId>
+            <artifactId>flight-integration-tests</artifactId>
+            <version>11.0.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.questdb</groupId>
+                <artifactId>rust-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <executions>
+                    <execution>
+                        <id>rust-build-id</id>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                        <configuration>
+                            <path>../polars</path>
+                            <copyTo>${project.build.directory}/classes/io/questdb/example/rust/libs</copyTo>
+                            <copyWithPlatformDir>true</copyWithPlatformDir>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
