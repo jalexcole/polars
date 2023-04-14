@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class DuplicateError {
+public class DuplicateError extends Exception {
     
 }

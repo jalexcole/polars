@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class TooManyRowsReturnedError {
+public class TooManyRowsReturnedError extends Exception {
     
 }

@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class ColumnNotFoundError {
+public class ColumnNotFoundError extends Exception{
     
 }

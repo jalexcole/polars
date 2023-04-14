@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class RowsError {
+public class RowsError extends Exception {
     
 }

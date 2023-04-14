@@ -135,6 +135,6 @@ public class DataFrame {
         return false;
     }
 
-
+    private native boolean polars_empty();
 
 }

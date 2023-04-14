@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class PolarsPanicError {
+public class PolarsPanicError extends Exception {
     
 }

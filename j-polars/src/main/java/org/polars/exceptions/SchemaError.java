@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class SchemaError {
+public class SchemaError extends Exception {
     
 }

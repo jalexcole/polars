@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class NoDataError {
+public class NoDataError extends Exception{
     
 }

@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class ShapeError {
+public class ShapeError extends Exception {
     
 }

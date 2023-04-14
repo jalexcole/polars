@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class ComputeError {
+public class ComputeError extends Exception{
     
 }

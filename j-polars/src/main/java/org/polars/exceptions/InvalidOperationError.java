@@ -1,5 +1,5 @@
 package org.polars.exceptions;
 
-public class InvalidOperationError {
+public class InvalidOperationError extends Exception {
     
 }
