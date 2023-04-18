@@ -3,7 +3,7 @@ name = "j-polars"
 version = "0.1.0"
 edition = "2021"
 
-[workspace]
+
 
 [features]
 header = []
@@ -13,4 +13,4 @@ footer = []
 
 [dependencies]
 jni="0.20.0"
-polars="*"
+polars= "*"

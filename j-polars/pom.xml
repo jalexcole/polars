@@ -9,6 +9,7 @@
 
     <build>
         <plugins>
+            
             <!--
                 The Rust Maven Plugin
                 Here it'll build the `str-reverse` crate and place the cdylib in the target's "classes" directory.

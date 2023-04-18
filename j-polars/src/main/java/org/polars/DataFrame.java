@@ -8,6 +8,13 @@ public class DataFrame {
     /**
      * Apply a custom/user-defined function (UDF) over the rows of the DataFrame.
      */
+
+    private Long dataFramePointer = null;
+
+    public DataFrame() {
+
+    }
+    
     public void apply() {
 
     }
